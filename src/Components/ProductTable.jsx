@@ -1,5 +1,13 @@
 
-const ProductTable = () => {
+const ProductTable = ({products}) => {
+
+  let lastCategory = null;
+  products.forEach((item) =>{
+    if(item.category === lastCategory){
+        
+    }
+  });
+
   return (
     <div>
         <table className="w-full">
