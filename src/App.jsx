@@ -1,14 +1,15 @@
 import FilterTable from "./Components/FilterTable";
 
 const ProductList = [
-  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
-  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
-  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
-  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
-  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
-  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
-  { category: "Fruits", price: "$5", stocked: true, name: "Strawberry" },
-  { category: "Vegetables", price: "$4", stocked: true, name: "Potato" }
+  { category: "Fruits", price: "$1.99", stocked: true, name: "Apple" },
+  { category: "Vegetables", price: "$2.99", stocked: true, name: "Spinach" },
+  { category: "Fruits", price: "$1.99", stocked: true, name: "Dragonfruit" },
+  { category: "Fruits", price: "$2.99", stocked: false, name: "Passionfruit" },
+  { category: "Vegetables", price: "$4.99", stocked: false, name: "Pumpkin" },
+  { category: "Vegetables", price: "$1.99", stocked: true, name: "Peas" },
+  { category: "Fruits", price: "$5.99", stocked: true, name: "Strawberry" },
+  { category: "Vegetables", price: "$4.99", stocked: true, name: "Potato" },
+  { category: "Fruits", price: "$9.99", stocked: true, name: "Pine Apple" }
 ]
 
   ProductList.sort((a,b) =>{
