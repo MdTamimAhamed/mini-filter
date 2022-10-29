@@ -1,30 +1,24 @@
 
-const SearchFilter = () => {
+const SearchFilter = ({showInStock, setShowInStock, filterText, setFilterText}) => {
   return (
     <form className="flex flex-col">
         <input
-        type='text'
-        placeholder="Search..."
-        className="border border-gray-300"
-        />
+          value={filterText}
+          onChange={e =>(setFilterText(e.target.value))}
+          type='text'
+          placeholder="Search..."
+          className="border border-gray-300 pl-2 h-10 rounded"
+          />
 
         {/*Filter Options*/}
         <label className="">
-            <input type="checkbox"/>
+            <input type="checkbox"
+              checked = {showInStock}
+              onChange={e => (setShowInStock(e.target.checked))}
+              />
             {' '}
             Only show products in stock
-        </label>
-        <label className="">
-            <input type="checkbox"/>
-            {' '}
-            Only Fruits
-        </label>
-        <label className="">
-            <input type="checkbox"/>
-            {' '}
-            Only Vegetable
-        </label>
-        
+        </label>       
     </form>
   )
 }
